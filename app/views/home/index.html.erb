@@ -1,2 +1,55 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="container">
+    <!-- Heading Row -->
+    <div class="row">
+        <div class="col-md-8">
+        	<%= image_tag "/images/yellowstone.jpg", width: "900", height: "350", class: "img-responsive img-rounded", alt: "Yellowstone National Park" %>
+        </div>
+        <div class="col-md-4">
+            <h1>My Resources App</h1>
+            <p>Created my first hosted rails app. I'll keep updating my this app with my existing resources available on my other website</p>
+            <a class="btn btn-primary btn-lg" href="http://tushal.comxa.com">Old Website</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Call to Action Well -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="well text-center">
+                Top resources for easy access. Other websites: 
+                <%= link_to "Website1", "http://tushal.comxa.com/" %>
+                <%= link_to "Website2", "http://tushalde.wixsite.com/home/" %>
+                <%= link_to "Blogs", "https://tushalblog.wordpress.com/" %>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Projects</h2>
+            <p>This page will contain some of my past projects. Will update link (rails version)  later.</p>
+            <a class="btn btn-default" href="http://tushal.comxa.com/examples.html">More Info</a>
+        </div>
+        <div class="col-md-4">
+            <h2>Demos</h2>
+            <p>This page will contain some intersting javascript demos.</p>
+            <a class="btn btn-default" href="http://tushal.comxa.com/public/examples/javascript/javascript_main.html">More Info</a>
+        </div>
+        <div class="col-md-4">
+            <h2>Resources</h2>
+            <p>This section contains useful resouces which we use often but cannot recall immediately. This page will serve as a quick reference.</p>
+            <a class="btn btn-default" href="http://tushal.comxa.com/key_concepts.html">More Info</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Tushal 2016</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
