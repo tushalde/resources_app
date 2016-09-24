@@ -1,175 +1,167 @@
 <div class="container">
-Unix Command-line commands:
-<span class="cmd">pwd</span> Print present working directory <br>
-<span class="cmd">cd ~</span> Change current directory to home directory<br>
-<span class="cmd">cd -</span> Toggle between current and the most recent directory<br><br>
+	<h2>Unix Command-line commands: </h2>
+	<span class="cmd">pwd</span> Print present working directory <br>
+	<span class="cmd">cd ~</span> Change current directory to home directory<br>
+	<span class="cmd">cd -</span> Toggle between current and the most recent directory<br><br>
 
-<span class="cmd">ls</span> Lists directory contents <br>
-<span class="cmd">ls -lsa</span> List in long format with file size including hidden files <br>
-<span class="cmd">ls -t</span> List sorted by time and date <br>
-<span class="cmd">ls -r</span> Lists in reverse order <br>
-<span class="cmd">ls -S</span> List sorted by file size <br><br>
+	<span class="cmd">ls</span> Lists directory contents <br>
+	<span class="cmd">ls -lsa</span> List in long format with file size including hidden files <br>
+	<span class="cmd">ls -t</span> List sorted by time and date <br>
+	<span class="cmd">ls -r</span> Lists in reverse order <br>
+	<span class="cmd">ls -S</span> List sorted by file size <br><br>
 
-<span class="cmd">cp -f [src] [dest]</span> Force copy by removing destination file if needed<br>
-<span class="cmd">cp -i [src] [dest]</span> Interactive - Ask before overwrite<br>
-<span class="cmd">cp -n [src] [dest]</span> No file overwrite<br>
-<span class="cmd">cp -R [src] [dest]</span> Recursive copy (including hidden files)<br>
-<span class="cmd">cp -u [src] [dest]</span> Update copy when src is newer than dest<br><br>
+	<span class="cmd">cp -f [src] [dest]</span> Force copy by removing destination file if needed<br>
+	<span class="cmd">cp -i [src] [dest]</span> Interactive - Ask before overwrite<br>
+	<span class="cmd">cp -n [src] [dest]</span> No file overwrite<br>
+	<span class="cmd">cp -R [src] [dest]</span> Recursive copy (including hidden files)<br>
+	<span class="cmd">cp -u [src] [dest]</span> Update copy when src is newer than dest<br><br>
 
-<span class="cmd">mv -f [src] [dest]</span> Force move by overwriting destination file if needed<br>
-<span class="cmd">mv -i [src] [dest]</span> Interactive - Ask before overwrite<br>
-<span class="cmd">mv -u [src] [dest]</span> Update move when src is newer than dest<br><br>
+	<span class="cmd">mv -f [src] [dest]</span> Force move by overwriting destination file if needed<br>
+	<span class="cmd">mv -i [src] [dest]</span> Interactive - Ask before overwrite<br>
+	<span class="cmd">mv -u [src] [dest]</span> Update move when src is newer than dest<br><br>
 
-<span class="cmd">rm -f [file]</span> Force remove ignoring permissions<br>
-<span class="cmd">rm -i [file]</span> Interactive - Prompt before any removal<br>
-<span class="cmd">rm -r [file]</span> Remove contents of directories recursively (<span class="bold">-r</span> or <span class="bold">-R</span> both works)<br><br>
+	<span class="cmd">rm -f [file]</span> Force remove ignoring permissions<br>
+	<span class="cmd">rm -i [file]</span> Interactive - Prompt before any removal<br>
+	<span class="cmd">rm -r [file]</span> Remove contents of directories recursively (<span class="bold">-r</span> or <span class="bold">-R</span> both works)<br><br>
 
-<span class="cmd">ssh username@hostname -p xxx</span> Remote connect to host at port xxx<br>
-<span class="cmd">ps aux</span>List processes <br>
-<ul class="cmd-ul">
-	<li>a => show processes for all users</li>
-	<li>u => display the process's user/owner</li>
-	<li>x => also show processes not attached to a terminal</li>
-</ul> 
-<span class="cmd">touch [file]</span> Updates access, modify and change timestamps to current time if file exists; if not, create new file <br>
-<span class="cmd">stat [file]</span> Display file status from file's inode <br>
-<span class="cmd">sudo [cmd]</span> Allow user to execute cmd as superuser or another user as specified in /etc/sudoers file<br>
-<span class="cmd">nano [file]</span> Edit the file in lightweight Nano editor <br>
-<span class="cmd">tail -f dev.log</span> Prints new changes being made to the file <br><br>
+	<span class="cmd">ssh username@hostname -p xxx</span> Remote connect to host at port xxx<br>
+	<span class="cmd">ps aux</span>List processes <br>
+	<ul class="cmd-ul">
+		<li>a => show processes for all users</li>
+		<li>u => display the process's user/owner</li>
+		<li>x => also show processes not attached to a terminal</li>
+	</ul> 
+	<span class="cmd">touch [file]</span> Updates access, modify and change timestamps to current time if file exists; if not, create new file <br>
+	<span class="cmd">stat [file]</span> Display file status from file's inode <br>
+	<span class="cmd">sudo [cmd]</span> Allow user to execute cmd as superuser or another user as specified in /etc/sudoers file<br>
+	<span class="cmd">nano [file]</span> Edit the file in lightweight Nano editor <br>
+	<span class="cmd">tail -f dev.log</span> Prints new changes being made to the file <br><br>
 
-<span class="cmd">cat [file]</span> Displays the contents of the file<br>
-<span class="cmd">cat [file1] [file2]</span> Displays file1 followed by file2<br>
-<span class="cmd">cat [file1] > [file2]</span> Overrides contents of file2 with contents of file1; if file2 does not exist, it will be created<br>
-<span class="cmd">cat [file1] [file2] [file3]</span> Overrides contents of file3 with the contents of file1 and file2<br>
-<span class="cmd">cat [file1] >> [file2]</span> Appends contents of file1 to file2<br>
-<span class="cmd">cat [file1] [file2] >> [file3]</span> Appends contents of file1 and file2 to file3<br><br>
+	<span class="cmd">cat [file]</span> Displays the contents of the file<br>
+	<span class="cmd">cat [file1] [file2]</span> Displays file1 followed by file2<br>
+	<span class="cmd">cat [file1] > [file2]</span> Overrides contents of file2 with contents of file1; if file2 does not exist, it will be created<br>
+	<span class="cmd">cat [file1] [file2] [file3]</span> Overrides contents of file3 with the contents of file1 and file2<br>
+	<span class="cmd">cat [file1] >> [file2]</span> Appends contents of file1 to file2<br>
+	<span class="cmd">cat [file1] [file2] >> [file3]</span> Appends contents of file1 and file2 to file3<br><br>
 
-<span class="cmd">grep "string" file</span> Searches the string in the specified file<br>
-<span class="cmd">grep "string" file_pattern</span> Searches string in the files named according to the pattern (eg. demo_* matches demo_f1, demo_f2, etc)<br>
-<span class="cmd">grep -i "string" file</span> Case insensitive search<br>
-<span class="cmd">grep "REGEX" file</span> Matches regular expressions in file<br>
-<span class="cmd">grep -w "string" file</span> Checks for full word and not substrings<br>
-<span class="cmd">grep -A N "string" file</span> Displays N lines after the match<br>
-<span class="cmd">grep -B N "string" file</span> Displays N lines before the match<br>
-<span class="cmd">grep -C N "string" file</span> Displays N lines around the match<br>
-<span class="cmd">grep -r "string" *</span> Searches in all files in current directory recursively<br>
-<span class="cmd">grep -v "string" file</span> Invert match<br>
-<span class="cmd">grep -v -e "string1" -e "string2" file</span> Displays lines which does not match<br>
-<span class="cmd">grep -c "string" file</span> Counts the number of matches<br>
-<span class="cmd">grep -n "string" file</span> Show the line number while displaying output<br>
-<span class="cmd">grep -l "string" file_pattern</span> Displays only the file names which matches<br>
-<span class="cmd">grep -o "string" file</span> Show only the matched string<br><br>
+	<span class="cmd">grep "string" file</span> Searches the string in the specified file<br>
+	<span class="cmd">grep "string" file_pattern</span> Searches string in the files named according to the pattern (eg. demo_* matches demo_f1, demo_f2, etc)<br>
+	<span class="cmd">grep -i "string" file</span> Case insensitive search<br>
+	<span class="cmd">grep "REGEX" file</span> Matches regular expressions in file<br>
+	<span class="cmd">grep -w "string" file</span> Checks for full word and not substrings<br>
+	<span class="cmd">grep -A N "string" file</span> Displays N lines after the match<br>
+	<span class="cmd">grep -B N "string" file</span> Displays N lines before the match<br>
+	<span class="cmd">grep -C N "string" file</span> Displays N lines around the match<br>
+	<span class="cmd">grep -r "string" *</span> Searches in all files in current directory recursively<br>
+	<span class="cmd">grep -v "string" file</span> Invert match<br>
+	<span class="cmd">grep -v -e "string1" -e "string2" file</span> Displays lines which does not match<br>
+	<span class="cmd">grep -c "string" file</span> Counts the number of matches<br>
+	<span class="cmd">grep -n "string" file</span> Show the line number while displaying output<br>
+	<span class="cmd">grep -l "string" file_pattern</span> Displays only the file names which matches<br>
+	<span class="cmd">grep -o "string" file</span> Show only the matched string<br><br>
 
-<span class="cmd">uname -a</span> Get all system information <br>
-<span class="cmd">uname -v</span> Print the operating system version <br>
-<span class="cmd">uname -s</span> Print the operating system name <br>
-<span class="cmd">uname -r</span> Print the operating system release <br>
-<span class="cmd">uname -p</span> Print the machine processor architecture name <br>
-<span class="cmd">uname -m</span> Print the machine hardware name <br>
-<span class="cmd">uname -n</span> Print the nodename (the nodename may be a name that the system is known by to a communications network) <br><br>
+	<span class="cmd">uname -a</span> Get all system information <br>
+	<span class="cmd">uname -v</span> Print the operating system version <br>
+	<span class="cmd">uname -s</span> Print the operating system name <br>
+	<span class="cmd">uname -r</span> Print the operating system release <br>
+	<span class="cmd">uname -p</span> Print the machine processor architecture name <br>
+	<span class="cmd">uname -m</span> Print the machine hardware name <br>
+	<span class="cmd">uname -n</span> Print the nodename (the nodename may be a name that the system is known by to a communications network) <br><br>
 
-<span class="cmd">chown</span> Change owner <br>
-<span class="cmd">chgrp</span> Change group <br>
-<span class="cmd">chmod [[options]] [mode] [file]</span> Change access permissions to file system objects (<span class="bold italic">ch</span>ange <span class="bold italic">mod</span>e)<br>
-<span class="cmd">chmod -R 777 folder</span> Recursively set permissions to files in folder<br>
-<table class="table table-hover table-bordered">
-	<caption>Numerical Permissions (Octal modes)</caption>
-	<tr>
-		<th>#</th>
-		<th>Permission</th>
-		<th>rwx</th>
-	</tr>
-	<tr>
-		<td>7</td>
-		<td>Read, Write, Execute</td>
-		<td>rwx</td>
-	</tr>
-	<tr>
-		<td>6</td>
-		<td>Read, Write</td>
-		<td>rw-</td>
-	</tr>
-	<tr>
-		<td>5</td>
-		<td>Read, Execute</td>
-		<td>r-x</td>
-	</tr>
-	<tr>
-		<td>4</td>
-		<td>Read only</td>
-		<td>r--</td>
-	</tr>
-	<tr>
-		<td>3</td>
-		<td>Write, Execute</td>
-		<td>-wx</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td>Write only</td>
-		<td>-w-</td>
-	</tr>
-	<tr>
-		<td>1</td>
-		<td>Execute only</td>
-		<td>--x</td>
-	</tr>
-	<tr>
-		<td>0</td>
-		<td>None</td>
-		<td>---</td>
-	</tr>
-</table>
-<table class="table table-hover table-bordered">
-	<caption>Symbolic modes</caption>
-	<tr>
-		<th>Reference</th>
-		<th>Class</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>u</td>
-		<td>owner</td>
-		<td>file's owner</td>
-	</tr>
-	<tr>
-		<td>g</td>
-		<td>group</td>
-		<td>users who are members of the file's group</td>
-	</tr>
-	<tr>
-		<td>o</td>
-		<td>others</td>
-		<td>users who are neither the file's owner nor members of the file's group</td>
-	</tr>
-	<tr>
-		<td>a</td>
-		<td>all</td>
-		<td>all three of the above, same as ugo</td>
-	</tr>
-	<tr>
-		<th>Operator</th>
-		<th colspan="2">Description</th>
-	</tr>
-	<tr>
-		<td>+</td>
-		<td colspan="2">Adds the specified modes to the specified classes eg. <span class="bold">chmod  g+w [dir]</span></td>
-	</tr>
-	<tr>
-		<td>-</td>
-		<td colspan="2">Removes the specified modes from the specified classes eg. <span class="bold">chmod  g-w [dir]</span></td>
-	</tr>
-	<tr>
-		<td>=</td>
-		<td colspan="2">The modes specified are to be made the exact modes for the specified classes eg. <span class="bold">chmod ug=rx [dir]</span></td>
-	</tr>
-</table>
-
-[To be written - Topics] <br>
-bash, tcsh
-<br>git
-<br>vnc
-<br>cron job, schedular
-<br>export, man -> manual pages, more file -> to paginate the contents of file, head, tail
-<br>sync -> regex
+	<span class="cmd">chown</span> Change owner <br>
+	<span class="cmd">chgrp</span> Change group <br>
+	<span class="cmd">chmod [[options]] [mode] [file]</span> Change access permissions to file system objects (<span class="bold italic">ch</span>ange <span class="bold italic">mod</span>e)<br>
+	<span class="cmd">chmod -R 777 folder</span> Recursively set permissions to files in folder<br>
+	<table class="table table-hover table-bordered">
+		<caption class="table-header">Numerical Permissions (Octal modes)</caption>
+		<tr>
+			<th>#</th>
+			<th>Permission</th>
+			<th>rwx</th>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>Read, Write, Execute</td>
+			<td>rwx</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>Read, Write</td>
+			<td>rw-</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Read, Execute</td>
+			<td>r-x</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Read only</td>
+			<td>r--</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Write, Execute</td>
+			<td>-wx</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Write only</td>
+			<td>-w-</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Execute only</td>
+			<td>--x</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>None</td>
+			<td>---</td>
+		</tr>
+	</table>
+	<table class="table table-hover table-bordered">
+		<caption class="table-header">Symbolic modes</caption>
+		<tr>
+			<th>Reference</th>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>u</td>
+			<td>owner</td>
+			<td>file's owner</td>
+		</tr>
+		<tr>
+			<td>g</td>
+			<td>group</td>
+			<td>users who are members of the file's group</td>
+		</tr>
+		<tr>
+			<td>o</td>
+			<td>others</td>
+			<td>users who are neither the file's owner nor members of the file's group</td>
+		</tr>
+		<tr>
+			<td>a</td>
+			<td>all</td>
+			<td>all three of the above, same as ugo</td>
+		</tr>
+		<tr>
+			<th>Operator</th>
+			<th colspan="2">Description</th>
+		</tr>
+		<tr>
+			<td>+</td>
+			<td colspan="2">Adds the specified modes to the specified classes eg. <span class="bold">chmod  g+w [dir]</span></td>
+		</tr>
+		<tr>
+			<td>-</td>
+			<td colspan="2">Removes the specified modes from the specified classes eg. <span class="bold">chmod  g-w [dir]</span></td>
+		</tr>
+		<tr>
+			<td>=</td>
+			<td colspan="2">The modes specified are to be made the exact modes for the specified classes eg. <span class="bold">chmod ug=rx [dir]</span></td>
+		</tr>
+	</table>
 </div>

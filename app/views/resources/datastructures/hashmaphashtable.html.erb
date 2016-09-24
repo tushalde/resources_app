@@ -1,76 +1,77 @@
 <div class="container">
-<ul>
-	<li> <h4>Differences between HashMap and HashTable</h4>
-		<table class="table table-hover">
-	    <thead>
-	      <tr>
-	        <th></th>
-	        <th>HashMap</th>
-	        <th>HashTable</th>
-	      </tr>
-	    </thead>
-	    <tbody>
-	      <tr>
-	        <td>Synchronization or Thread Safe</td>
-	        <td>Not synchronized and not thread safe (Hashmap is better for non-threading applications)</td>
-	        <td>Synchronized and thread safe (HashTable should be used in multithreading applications)</td>
-	      </tr>
-	      <tr>
-	        <td>Null Keys and Null values</td>
-	        <td>One null key, Any null values allowed</td>
-	        <td>Does not allow null keys and null values</td>
-	      </tr>
-	      <tr>
-	        <td>Iterating the values</td>
-	        <td>Uses iterator (fail-fast iterator )</td>
-	        <td>Uses enumerator (fail-safe iterator )</td>
-	      </tr>
-	      <tr>
-	      	<td>Performance</td>
-	      	<td>Much faster and uses less memory</td>
-	      	<td>Comparatively slower and uses more memory</td>
-	      </tr>
-	      <tr>
-	      	<td>Superclass and Legacy</td>
-	      	<td>Subclass of AbstractMap class, Legacy: No</td>
-	      	<td>Subclass of Dictionary class, widely used</td>
-	      </tr>
-	    </tbody>
-	  </table>
-	</li>
-	<li>
-		<h4>Example of HashMap and HashTable </h4>
-		<code>
+	<h2>HashMap and HashTable:</h2>
+	<ul>
+		<li> <h4>Differences between HashMap and HashTable</h4>
+			<table class="table table-hover">
+		    <thead>
+		      <tr>
+		        <th></th>
+		        <th>HashMap</th>
+		        <th>HashTable</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>Synchronization or Thread Safe</td>
+		        <td>Not synchronized and not thread safe (Hashmap is better for non-threading applications)</td>
+		        <td>Synchronized and thread safe (HashTable should be used in multithreading applications)</td>
+		      </tr>
+		      <tr>
+		        <td>Null Keys and Null values</td>
+		        <td>One null key, Any null values allowed</td>
+		        <td>Does not allow null keys and null values</td>
+		      </tr>
+		      <tr>
+		        <td>Iterating the values</td>
+		        <td>Uses iterator (fail-fast iterator )</td>
+		        <td>Uses enumerator (fail-safe iterator )</td>
+		      </tr>
+		      <tr>
+		      	<td>Performance</td>
+		      	<td>Much faster and uses less memory</td>
+		      	<td>Comparatively slower and uses more memory</td>
+		      </tr>
+		      <tr>
+		      	<td>Superclass and Legacy</td>
+		      	<td>Subclass of AbstractMap class, Legacy: No</td>
+		      	<td>Subclass of Dictionary class, widely used</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		</li>
+		<li>
+			<h4>Example of HashMap and HashTable </h4>
+			<code>
 <pre>import java.util.Hashtable;
 public class HashMapHashtableExample {    
-public static void main(String[] args) {            
+  public static void main(String[] args) {            
 
-Hashtable<String,String> hashtableobj = new Hashtable<String, String>();
-hashtableobj.put("Alive is ", "awesome");
-hashtableobj.put("Love", "yourself");
-System.out.println("Hashtable object output :"+ hashtableobj);
+    Hashtable<String,String> hashtableobj = new Hashtable<String, String>();
+    hashtableobj.put("Alive is ", "awesome");
+    hashtableobj.put("Love", "yourself");
+    System.out.println("Hashtable object output :"+ hashtableobj);
 
-HashMap hashmapobj = new HashMap();
-hashmapobj.put("Alive is ", "awesome");  
-hashmapobj.put("Love", "yourself"); 
-System.out.println("HashMap object output :"+hashmapobj);   
-}
+    HashMap hashmapobj = new HashMap();
+    hashmapobj.put("Alive is ", "awesome");  
+    hashmapobj.put("Love", "yourself"); 
+    System.out.println("HashMap object output :"+hashmapobj);   
+  }
 }</pre>
-	</code>
-	<h5>Output:</h5><br>
-	<code>
-		Hashtable object output :{Love=yourself, Alive is =awesome} <br>
-		HashMap object output :{Alive is =awesome, Love=yourself}
-	</code>
-	</li>
-	<li>
-		<h4>Similarities Between HashMap and Hashtable</h4>
-		<ol>
-			<li>Insertion order: None of them guarantee that map order will remain constant over time. Use LinkedHashMap to preserve the order</li>
-			<li>Map interface: Both implement the Map interface</li>
-			<li>Put and get method: Both have put and get methods with O(1) performance, assuming that the objects are distributed uniformly across the bucket</li>
-			<li>Internal working: Both work on the principle of Hashing</li>
-		</ol>
-	</li>
-</ul>
+		</code>
+		<h5>Output:</h5><br>
+		<code>
+			Hashtable object output :{Love=yourself, Alive is =awesome} <br>
+			HashMap object output :{Alive is =awesome, Love=yourself}
+		</code>
+		</li>
+		<li>
+			<h4>Similarities Between HashMap and Hashtable</h4>
+			<ol>
+				<li>Insertion order: None of them guarantee that map order will remain constant over time. Use LinkedHashMap to preserve the order</li>
+				<li>Map interface: Both implement the Map interface</li>
+				<li>Put and get method: Both have put and get methods with O(1) performance, assuming that the objects are distributed uniformly across the bucket</li>
+				<li>Internal working: Both work on the principle of Hashing</li>
+			</ol>
+		</li>
+	</ul>
 </div>

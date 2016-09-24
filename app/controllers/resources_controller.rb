@@ -1,4 +1,5 @@
 class ResourcesController < ApplicationController
+
   def index
   end
 
@@ -13,4 +14,13 @@ class ResourcesController < ApplicationController
   def unixcmds
   	render "/resources/unix/unixcmds"
   end
+
+  def unixfilesystem
+    render "/resources/unix/unixfilesystem"
+  end
+
+  def macfilesystem
+    render "/resources/mac/macfilesystem"
+  end
+
 end
