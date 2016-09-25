@@ -1,15 +1,18 @@
-<h1>Resources Index</h1>
-<%= link_to "HashMaps vs HashTables", controller: "resources", action: "hashmaphashtable" %> <br>
-<%= link_to "MAC Shortcuts", controller: "resources", action: "macshortcuts" %> <br>
-<%= link_to "Unix Commands", controller: "resources", action: "unixcmds" %> <br>
-File System Organization: <%= link_to "Unix", controller: "resources", action: "unixfilesystem" %> 
-&nbsp;<%= link_to "MAC", controller: "resources", action: "macfilesystem" %> <br>
+<div class="container">
+	<span class="view_count">Views: <%= @view_count %></span>
+	<h1>Resources Index</h1>
+	<%= link_to "HashMaps vs HashTables", controller: "resources", action: "hashmaphashtable" %> <br>
+	<%= link_to "MAC Shortcuts", controller: "resources", action: "macshortcuts" %> <br>
+	<%= link_to "Unix Commands", controller: "resources", action: "unixcmds" %> <br>
+	File System Organization: <%= link_to "Unix", controller: "resources", action: "unixfilesystem" %> 
+	&nbsp;<%= link_to "MAC", controller: "resources", action: "macfilesystem" %> <br>
 
-<br><p>Remaining topics to be updated soon</p>
-[To be written - Topics] <br>
-bash, tcsh
-<br>git
-<br>vnc
-<br>cron job, schedular
-<br>export, man -> manual pages, more file -> to paginate the contents of file, head, tail
-<br>sync -> regex
+	<br><p>Remaining topics to be updated soon</p>
+	[To be written - Topics] <br>
+	bash, tcsh
+	<br>git
+	<br>vnc
+	<br>cron job, schedular
+	<br>export, man -> manual pages, more file -> to paginate the contents of file, head, tail
+	<br>sync -> regex
+</div>
