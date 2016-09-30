@@ -29,6 +29,14 @@ class ResourcesController < ApplicationController
     render "/resources/mac/macfilesystem"
   end
 
+  def rails
+    @view_count = view_count_finder
+  end
+
+  def nodejs
+    @view_count = view_count_finder
+  end
+
   private
 
   def view_count_finder
