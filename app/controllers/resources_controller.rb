@@ -1,4 +1,5 @@
 class ResourcesController < ApplicationController
+  before_action :logged_in_user
 
   def index
     @view_count = view_count_finder

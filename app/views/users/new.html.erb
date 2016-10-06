@@ -11,16 +11,23 @@
 	<h1 class="align-center">Sign Up</h1>
 	<div class="col-md-6 col-md-offset-3">
 	  <%= form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
+	    <%= f.label :firstname %> <span class="required">*</span>
+	    <%= f.text_field :firstname, class: 'form-control', required: true %>
+	    <%= f.label :lastname %>
+	    <%= f.text_field :lastname, class: 'form-control' %>
 	    <%= f.label :username %>
-	    <%= f.text_field :username, class: 'form-control' %>
+	    <a href="#" title="Username" data-toggle="popover" data-trigger="hover" data-content="Should be unique between 3 to 20 characters"><span class="helplink"></span></a>
+	    <%= f.text_field :username, class: 'form-control', required: true %>
 	    <%= f.label :email %>
-	    <%= f.email_field :email, class: 'form-control' %>
+	    <%= f.email_field :email, class: 'form-control', required: true %>
 	    <%= f.label :password %>
-	    <%= f.password_field :password, class: 'form-control' %>
+	    <a href="#" title="Password" data-toggle="popover" data-trigger="hover" data-content="Should be between 6 to 20 characters<br><u>N.B.:</u> Passwords are stored encrypted."><span class="helplink"></span></a>
+	    <%= f.password_field :password, class: 'form-control', required: true %>
 	    <%= f.label :password_confirmation %>
 	    <%= f.password_field :password_confirmation, class: 'form-control' %> <br>
 	    <%= f.submit "Signup", class: 'btn btn-primary' %>
 	  <% end %>
+	  <p>Already have an account? <%= link_to "Log in", login_path %></p>
 	  <% if @user.errors.any? %>
 	  	<br>
 	    <ul class="alert alert-warning">
@@ -32,3 +39,8 @@
 	</div>
 	
 </div>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({ html : true });
+});
+</script>
