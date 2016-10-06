@@ -1,16 +1,8 @@
-<% @page_title = "Signup | Resources App" %>
+<% @page_title = "Profile | Resources App" %>
 <div class="container">
-	<% if flash[:error].present? %>
-	    <div class="alert alert-danger alert-dismissible">
-	        <%= flash[:error] %>
-	        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	    </div>
-	<% end %>
-
-	
-	<h1 class="align-center">Sign Up</h1>
+	<h1 class="align-center">Profile</h1>
 	<div class="col-md-6 col-md-offset-3">
-	  <%= form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
+		<%= form_for(@user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
 	    <%= f.label :firstname %> <span class="required">*</span>
 	    <%= f.text_field :firstname, class: 'form-control', required: true %>
 	    <%= f.label :lastname %>
@@ -22,12 +14,12 @@
 	    <%= f.email_field :email, class: 'form-control', required: true %>
 	    <%= f.label :password %>
 	    <a href="#" title="Password" data-toggle="popover" data-trigger="hover" data-content="Should be between 6 to 20 characters<br><u>N.B.:</u> Passwords are stored encrypted."><span class="helplink"></span></a>
-	    <%= f.password_field :password, class: 'form-control', required: true %>
+	    <%= f.password_field :password, class: 'form-control', required: true, value: "*******", disabled: true %>
 	    <%= f.label :password_confirmation %>
-	    <%= f.password_field :password_confirmation, class: 'form-control' %> <br>
-	    <%= f.submit "Signup", class: 'btn btn-primary' %>
+	    <%= f.password_field :password_confirmation, class: 'form-control', value: "*******", disabled: true %> <br>
+	    <%= f.submit "Update profile", class: 'btn btn-primary', disabled: true %>
 	  <% end %>
-	  <p>Already have an account? <%= link_to "Log in", login_path %></p>
+	  <p>Forgot password? <%= link_to "Email", "#" %></p>
 	  <% if @user.errors.any? %>
 	  	<br>
 	    <ul class="alert alert-warning">
@@ -37,10 +29,4 @@
 	    </ul>
 	  <% end %>
 	</div>
-	
 </div>
-<script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover({ html : true });
-});
-</script>

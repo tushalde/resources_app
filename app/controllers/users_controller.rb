@@ -18,6 +18,16 @@ class UsersController < ApplicationController
     end
   end
 
+  def profile
+  	if logged_in?
+  		@user = current_user
+  		render 'profile'
+  	else
+  		flash[:danger] = "You must be signed in to view this page"
+  		redirect_to login_path
+  	end
+  end
+
   private
   def user_params
     params.require(:user).permit(:firstname, :lastname, :username, :email, :password, :salt)
