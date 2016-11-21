@@ -41,3 +41,6 @@
 .required {
     color: red;
 }
+.code {
+    font-family: monospace;
+}

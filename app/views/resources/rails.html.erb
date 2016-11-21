@@ -1,8 +1,11 @@
 <div class="container">
 	<span class="view_count">Views: <%= @view_count %></span>
 	<h2>Rails</h2>
-	<ul>
+	<ul class="code">
 		<li>rails g model singular (create_table :plural)</li>
 		<li>rails g controller plural action</li>
+		<li>rake -T <span class="rails_comment"># lists all rake tasks</span></li>
+		<li>rake log:clear <span class="rails_comment code"># clears log/*.log</span></li>
+		<li>tail -f log/development.log <span class="rails_comment">Displays the end of text file, updates the display when new lines are added</span></li>
 	</ul>
 </div>
